@@ -11,16 +11,18 @@
 }
 
 .navbar {
+  height: 4rem;
+  width: 100%;
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
   background: black;
   align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 9%;
+  justify-content: space-around;
+  padding: 1rem 9%;
 }
 
 .navbar a {
@@ -31,6 +33,8 @@
 
 .navbar a:hover {
   color: yellowgreen;
+  background-color: antiquewhite;
+  padding: 1rem 10px;
 }
 
 .slideshow-container {
