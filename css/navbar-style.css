@@ -116,15 +116,15 @@ section {
 }
 
 .home {
-  padding: 12rem 0 3rem;
+  padding: 10rem 0 3rem;
   /* padding-top: 12rem;
   padding-bottom: 3rem; */
   text-align: center;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .home img {
-  width: 100%;
+  width: 90%;
   /* margin: 1rem 0; */
 }
 
@@ -136,11 +136,6 @@ section {
   gap: 15rem;
   background: #F4EDF2;
 }
-
-/*  */
-/*  */
-/* de modificat */
-/*  */
 
 .icons-container .icons:hover {
   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
@@ -157,6 +152,7 @@ section {
   box-shadow: var(--box-shadow);
   border-radius: 1rem;
   box-shadow: rgba(244,143,195,0.3) 0px -50px 36px -28px inset;
+  cursor: pointer;
 }
 
 .icons-container
@@ -172,10 +168,21 @@ section {
 }
 
 .icons-container
+.icons:hover i {
+  background: var(--light-pink);
+  color: var(--pink);
+}
+
+.icons-container
 .icons
 .content h3 {
   color: var(--pink);
   font-size: 2.5rem;
+}
+.icons-container
+.icons:hover
+.content h3 {
+  color: var(--light-pink);
 }
 
 .icons-container
@@ -183,6 +190,13 @@ section {
 .content p {
   color: var(--light-color);
   font-size: 1.5rem;
+}
+
+.icons-container
+.icons:hover
+.content p {
+  color: #eee;
+
 }
 
 .heading {
@@ -412,7 +426,7 @@ section {
   background: var(--light-pink);
 }
 
-/* Start Feature slide style */
+/* Start Feature Section */
 
 .swiper-wrapper__box {
   display: flex;
@@ -481,9 +495,6 @@ section {
 }
 
 /* Start Fake Swiper styleing */
-
-
-
 .featured
 .fake-swiper2 {
   padding-top: 20px;
@@ -497,8 +508,316 @@ section {
 .fa-solid {
   color: var(--pink);
 }
+/* End Feature Section */
+
+/* Start Newsletter Section */
+.newsletter {
+  padding: 6rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.newsletter:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.newsletter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/newsletter-img.png) no-repeat; 
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.newsletter h3 {
+  color: var(--black);
+  font-size: 3.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.newsletter p {
+  color: var(--black);
+  font-size: 2rem;
+  padding: 1rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.newsletter form {
+  margin: 1rem auto;
+  max-width: 60rem;
+  height: 5rem;
+  display: flex;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  border-radius: 5rem;
+  position: relative;
+  z-index: 1;
+  border: var(--border);
+}
+
+.newsletter form input[type='email'] {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.newsletter form input[type="submit"] {
+  height: 100%;
+  width: 17rem;
+  font-size: 1.7rem;
+  color: var(--black);
+  background: var(--light-pink);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  border: var(--border);
+}
+
+.newsletter form input[type="submit"]:hover {
+  background: var(--pink);
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+/* End Newsletter Section */
 
 
+/* Start Reviews Section */
+.reviews
+.swiper-reviews {
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.reviews
+.swiper-reviews
+.box {
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+  
+}
+
+.reviews
+.swiper-reviews
+.box
+.img-reveiws1 {
+  opacity: 0.4;
+}
+
+.reviews
+.swiper-reviews
+.swiper-reviews-slide {
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+}
+
+.reviews
+.swiper-reviews
+.box img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.reviews
+.swiper-reviews
+.box
+.content-reviews p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 1rem;
+}
+
+.reviews
+.swiper-reviews
+.box
+.content-reviews h3 {
+  font-size: 2.2rem;
+  color: var(--black);
+  padding-bottom: 0.5rem;
+}
+
+.reviews
+.swiper-reviews
+.box
+.content-reviews i {
+  font-size: 1.5rem;
+  color: var(--pink);
+}
+
+.reviews
+.reviews-slider
+.fake-swiper3 {
+  padding-top: 10px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reviews
+.reviews-slider
+.fake-swiper3
+.fa-solid {
+  color: var(--pink);
+}
+/* End Reviews Section */
+
+/* Start Contact Section */
+.contact
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem 0 2rem;
+}
+
+.contact
+.contact-row
+.map {
+  flex: 1 1 42rem;
+  width: 100%;
+  padding: 2rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.contact
+.contact-row
+.map:hover {
+  box-shadow: 0 0.5rem 0.5rem 0.5rem rgba(113, 7, 62, 0.3);
+}
+
+.contact
+.contact-row form {
+  flex: 1 1 42rem;
+  padding: 2rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+
+.contact
+.contact-row form:hover {
+  box-shadow: 0 0.5rem 0.5rem 0.5rem rgba(113, 7, 62, 0.3);
+}
+
+.contact
+.contact-row form h3 {
+  font-size: 2.8rem;
+  color: var(--black);
+}
+
+.contact
+.contact-row form
+.box {
+  margin: 0.7rem 0;
+  width: 100%;
+  border: var(--border);
+  padding: 1rem;
+  font-size: 1.6rem;
+  text-transform: none;
+  border-radius: 0.5rem;
+}
+
+.contact
+.contact-row form
+.box:hover  {
+  box-shadow:0 0.2rem 0.2rem 0.2rem rgba(113, 7, 62, 0.3);;
+}
+
+.contact
+.contact-row form textarea {
+  height: 15rem;
+  resize: none;
+}
+/* End Contact Section */
+
+/* Start Footer Section */
+.footer-rugs {
+  background: var(--light-pink);
+  padding-top: 1rem;
+}
+
+.footer-rugs
+.box-container-rugs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer-rugs
+.box-container-rugs
+.box-rugs h3 {
+  color: var(--black);
+  font-size: 2.2rem;
+  display: block;
+  padding: 1rem 0;
+}
+
+.footer-rugs
+.box-container-rugs
+.box-rugs a {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  display: block;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.footer-rugs
+.box-container-rugs
+.box-rugs a:hover {
+  color: var(--pink);
+}
+
+.footer-rugs
+.box-container-rugs
+.box-rugs a i {
+  padding-right: 0.5rem;
+  color: var(--black);
+}
+
+.footer-rugs
+.box-container-rugs
+.box-rugs a:hover i {
+  padding-right: 2rem;
+  color: #fff;
+}
+
+.footer-rugs 
+.credit {
+  text-align: center;
+  border-top: var(--border);
+  padding: 1rem;
+  padding-top: 2rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-rugs 
+.credit span {
+  font-size: 2rem;
+  color: var(--pink);
+}
+/* End Footer Section */
 
 @media (max-width: 991px) {
   html {
