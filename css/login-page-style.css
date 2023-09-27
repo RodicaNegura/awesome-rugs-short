@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+  --pink:#D50078;
+  --light-pink:#F3C9EA;
+  --black:#130f40;
+  --light-color:#666;
+  --box-shadow:0 .5rem 1rem rgba(244,143,195,0.3);
+  --border:.1rem solid rgba(0,0,0,.1);
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-container {
+  position: fixed;
+  /* top: 105%;
+  left: 0;
+  z-index: 1000; */
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container.active {
+  top: 0;
+  opacity: 1;
+}
+
+.login-container form {
+  padding: 2rem;
+  margin: 2rem;
+  box-shadow: var(--box-shadow);
+  background: #fff;
+  border: var(--border);
+  border-radius: 1rem;
+  text-align: center;
+  width:40rem;
+}
+
+.login-container form h3 {
+  color: var(--black);
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.login-container form 
+.box-login {
+  margin: 0.7rem 0;
+  width: 100%;
+  text-transform: none;
+  color: var(--black);
+  font-size: 1.6rem;
+  padding: 1rem 1.2rem;
+  border: var(--border);
+  border-radius: 0.7rem;
+}
+
+.login-container form 
+.box-login:hover {
+  background: #f3ecf1;
+  border: 1px solid rgb(188, 138, 188);
+  box-shadow: var(--box-shadow);
+  padding: 1rem 1.2rem;
+}
+
+.login-container form p {
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  color: var(--light-color);
+}
+
+.login-container form p a  {
+  color: var(--pink);
+  text-decoration: underline;
+}
+
+.login-container form
+.btn {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.login-container form
+.buttons {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+
+.login-container #close-login-form {
+  position: fixed;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.login-container
+.cancel-btn {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 80px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--light-pink);
+  color: var(--black);
+  cursor: pointer;
+}
+
+.login-container
+.cancel-btn:hover {
+  background: var(--pink);
+  color: white;
+}
+
+.login-container
+.cancel-btn i {
+  font-size: 4rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
