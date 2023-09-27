@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+  --pink:#D50078;
+  --light-pink:#F3C9EA;
+  --black:#130f40;
+  --light-color:#666;
+  --box-shadow:0 .5rem 1rem rgba(244,143,195,0.3);
+  --border:.1rem solid rgba(0,0,0,.1);
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.rand-liber-explore {
+  height: 2rem;
+  width: 100%;
+}
+
+
+.explore-rugs-individual {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem 0 4rem 0;
+  gap: 2rem;
+}
+
+.explore-rugs-individual
+.explore-rugs-box {
+  text-align: center;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  border-radius: 1rem;
+  width: 45rem;
+  height: 50rem;
+}
+
+
+.explore-rugs-individual
+.explore-rugs-box:hover {
+  box-shadow: 0 .5rem 1rem var(--pink);
+}
+
+.explore-rugs-individual
+.explore-rugs-box img {
+  width: 30rem;
+  height: 33rem;
+  border-radius: 1rem;
+  border: 0.7rem solid rgba(128, 10, 126, 0.4);
+}
+
+.explore-rugs-individual
+.explore-rugs-box:hover img {
+  transform: scale(0.9);
+}
+
+.explore-rugs-container
+.explore-rugs-individual
+.explore-rugs-box h3 {
+  font-size: 2.1rem;
+  color: var(--black);
+}
+
+.explore-rugs-container
+.explore-rugs-individual
+.explore-rugs-box 
+.explore-price {
+  font-size: 2rem;
+  color: var(--pink);
+  font-weight: bolder;
+}
