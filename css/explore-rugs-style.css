@@ -21,6 +21,32 @@
   width: 100%;
 }
 
+.explore-cancel
+.explore-cancel-btn {
+  position: absolute;
+  right: 70px;
+  top: 25px;
+  width: 80px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--light-pink);
+  color: var(--black);
+  cursor: pointer;
+}
+
+.explore-cancel
+.explore-cancel-btn:hover {
+  background: var(--pink);
+  color: white;
+}
+
+.explore-cancel
+.explore-cancel-btn i {
+  font-size: 4rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
 
 .explore-rugs-individual {
   display: flex;
